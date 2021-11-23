@@ -2,8 +2,11 @@ import Memory from "./memory";
 
 class Array {
   constructor() {
+      //get length of array
     this.length = 0;
+    //get size of memory in array
     this._capacity = 0;
+    //get address of pointer in memory
     this.ptr = Memory.prototype.allocate(this.length);
   }
 
